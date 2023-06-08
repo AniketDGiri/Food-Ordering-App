@@ -14,7 +14,7 @@ const Cart = (props) => {
   };
 
   const cartItemAddHandler = (item) => {
-    totalCartItems.addItemToCart({ ...item, amount: 1 });
+    totalCartItems.addItemToCart({ ...item, totalCount: 1 });
   };
 
   const hasItem = totalCartItems.length > 0;

@@ -22,7 +22,7 @@ const cartReducer = (prevState, action) => {
     if (existingCartItem) {
       updateItem = {
         ...existingCartItem,
-        totalCount: existingCartItem.totalCount + action.item.amount,
+        totalCount: existingCartItem.totalCount + action.item.totalCount,
       };
 
       updatedItems = [...prevState.items];
